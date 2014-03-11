@@ -1,0 +1,6 @@
+#!/bin/sh
+REPOS="$1"
+TXN="$2"
+cd /opt/svndata/document/hooks
+/opt/jdk1.6.0_34/bin/java -jar hooks.jar $REPOS $TXN
+exit $?
